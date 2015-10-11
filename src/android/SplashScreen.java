@@ -69,7 +69,7 @@ public class SplashScreen extends CordovaPlugin {
 
     @Override
     protected void pluginInitialize() {
-        if (HAS_BUILT_IN_SPLASH_SCREEN || !firstShow) {
+        if (HAS_BUILT_IN_SPLASH_SCREEN) {
             return;
         }
         // Make WebView invisible while loading URL
